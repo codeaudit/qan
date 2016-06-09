@@ -5,7 +5,7 @@ Source code to the paper [Deep Q-Networks for Accelerating the Training of Deep 
 ## Reproduce our results on MNIST
 
 ### Dependencies
-We are using Torch. The DQN component is mostly modified from [DeepMind Atari DQN](https://github.com/kuz/DeepMind-Atari-Deep-Q-Learner). 
+We are using Lua/Torch. The DQN component is mostly modified from [DeepMind Atari DQN](https://github.com/kuz/DeepMind-Atari-Deep-Q-Learner). 
 
 You might need to run `install_dependencies.sh` first. 
 
@@ -39,8 +39,9 @@ python paint_mini_vs.py;
 3. When to stop doing regression is in `/ataricifar/dqn/cnnGameEnv/lua`, in line 250
 
 ## TODO
-1. Experiments on CIFAR
-2. Transfer learning
+1. Experiments on CIFAR-10
+2. Transfer learning: subset of CIFAR-10 to full CIFAR-10
+3. Visualization of the actions taken by the DQN. For example, show which categories have been used at every iteration. 
 
 ## Citation
 ```
